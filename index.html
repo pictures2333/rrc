@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf8">
+    </body>
+
+    <style>
+        .waiting{
+            display: block;
+            font-size: 70px;
+            font-family: sans-serif;
+            margin-left: 30px;
+            font-weight:bold;
+            margin-top: 100px;
+            text-align: left;
+        }
+        .waiting2{
+            text-align: left;
+            display: block;
+            font-size: 50px;
+            font-family: sans-serif;
+            margin-left: 30px;
+        }
+
+        .rickroll{
+            display: block;
+            visibility: hidden;
+            margin-left: 30px;
+        }
+
+        .hnd{
+            text-align: center;
+            display: block;
+            font-size: 50px;
+            font-family: sans-serif;
+            margin-left: 30px;
+            text-align: left;
+            margin-top: 50px;
+            visibility: hidden;
+        }
+        .fbk{
+            display: block;
+            visibility: hidden;
+            margin-left: 30px;
+        }
+    </style>
+
+    <script>
+        setTimeout(function(){
+            var title = document.querySelector(".waiting")
+            title.innerHTML = "You are rick-rolled!!!"
+            var title2 = document.querySelector(".waiting2")
+            title2.style.visibility = "hidden"
+            var ting = document.querySelector(".rickroll")
+            ting.style.visibility = "visible"
+            var fbk = document.querySelector(".fbk")
+            fbk.style.visibility = "visible"
+            var hnd = document.querySelector(".hnd")
+            hnd.style.visibility = "visible"
+        }, 3000)
+    </script>
+
+    <html>
+        <a class="waiting">We're cheecking your connection</a>
+        <br>
+        <a class="waiting2">Please Wait...</a>
+        <img src="rickroll.gif" class = 'rickroll'>
+        <br>
+
+        <a class="hnd">Have a nice day~</a>
+        <img src="fbka.gif" class = 'fbk'>
+    </html>
+</html>
