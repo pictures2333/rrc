@@ -22,6 +22,19 @@
             font-family: sans-serif;
             margin-left: 30px;
         }
+        .waiting3{
+            width: 300px;
+            text-align: center;
+            display: block;
+            font-size: 50px;
+            font-family: sans-serif;
+            margin-left: 30px;
+            color:black;
+            background-color: orange;
+            padding: 5px;
+            border-radius: 5px;
+            visibility: hidden;
+        }
 
         .rickroll{
             display: block;
@@ -48,23 +61,34 @@
 
     <script>
         setTimeout(function(){
-            var title = document.querySelector(".waiting")
-            title.innerHTML = "You are rick-rolled!!!"
+            var button = document.querySelector(".waiting3")
+            button.style.visibility = "visible"
             var title2 = document.querySelector(".waiting2")
             title2.style.visibility = "hidden"
+            var title = document.querySelector(".waiting")
+            title.innerHTML = "Done!"
+        }, 3000)
+
+        function showrick() {
+            var button = document.querySelector(".waiting3")
+            button.style.visibility = "hidden"
+            var title = document.querySelector(".waiting")
+            title.innerHTML = "You are rick-rolled!!!"
             var ting = document.querySelector(".rickroll")
             ting.style.visibility = "visible"
             var fbk = document.querySelector(".fbk")
             fbk.style.visibility = "visible"
             var hnd = document.querySelector(".hnd")
             hnd.style.visibility = "visible"
-        }, 3000)
+        }
     </script>
 
     <html>
         <a class="waiting">We're cheecking your connection</a>
         <br>
         <a class="waiting2">Please Wait...</a>
+        <br>
+        <a class="waiting3" onclick="showrick()">Click to Visit</a>
         <img src="rickroll.gif" class = 'rickroll'>
         <br>
 
